@@ -1,0 +1,14 @@
+<h2>Here is Your Historical Figure;</h2>
+
+<h3><%=@figure.name%></h3>
+
+<h3><%=@figure.name%>'s Landmarks:</h3>
+<%@figure.landmarks.each do |landmark|%>
+  <%=landmark.name%>
+  <%=landmark.year_completed%>
+<%end%>
+
+<h3><%=@figure.name%>'s Titles:</h3>
+<%@figure.titles.each do |title|%>
+  <%=title.name%>
+<%end%>
